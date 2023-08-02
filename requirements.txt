@@ -1,0 +1,11 @@
+matplotlib
+numpy
+pandas
+cassandra-driver
+Flask
+Flask-Cors
+joblib
+scikit-learn
+scipy
+
+
