@@ -2,4 +2,5 @@ venv
 incomeprediction
 .vscode
 __pycache__
+documents
 

@@ -44,29 +44,54 @@ The project is organized into the following directories:
  **GradientBoostingClassifier** <br>
  **HistGradientBoostingClassifier** <br>
 
- ### Preprocessing Models Used:
+### Preprocessing Models Used:
   **StandardScaler** <br>
   **OneHotEncoder** <br>
 
- ### Mlops Tools Used:
+### Tools Used:
   **Git** - Version Control <br>
   **Docker** - Containerization <br>
-  **MLflow** -  Frameworks <br>
-  **AWS** - Cloud Platforms <br>
+  **AWS** - Deployment <br>
 
- 
+### Libraries Used:
+  **pandas**  <br>
+  **numpy** <br>
+  **matplotlib**  <br>
+  **Flask** <br>
+  **Flask-Cors**  <br>
+  **scikit-learn**  <br>
+  **scipy** <br>
+  **joblib**  <br>
+  **cassandra-driver**  <br>
+
+
+### AWS-CD-Deployment-with-AWS beanstalk
+1. Login to AWS console.
+2. Create application.
+3. Create code pipeline.
+
+Domain link - ***incomeprediction.ap-south-1.elasticbeanstalk.com*** 
+
+
 ## Installation
 
 To run this project locally, you need create Python 3.9 Install the required packages by running the following command:
 
+```bash
 'conda create -p venv python=3.9 -y'
+```
 
+```bash
 'source activate ./venv'
+```
 
+```bash
 'pip install -r requirements.txt'
+```
 
+```bash
 'python application.py'
-
+```
 
 ## How to Use
 
