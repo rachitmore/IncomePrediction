@@ -42,8 +42,6 @@ The project is organized into the following directories:
 ### Classification Models Used:
 
  **GradientBoostingClassifier** <br>
- **XGBClassifier**<br>
- **LGBMClassifier** <br>
  **HistGradientBoostingClassifier** <br>
 
  ### Preprocessing Models Used:
