@@ -7,5 +7,7 @@ Flask-Cors
 joblib
 scikit-learn
 scipy
+xgboost
+lightgbm
 
 
