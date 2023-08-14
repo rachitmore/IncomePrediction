@@ -78,7 +78,9 @@ class Data_Getter:
         except Exception as e:
             self.logging.log(str(e))
             raise AppException(e,sys) from e
-        session.shutdown()
+        finally:
+            session.shutdown()
+            
         self.logging.log("CSV file has been written. and data saved to the artifacts/data/raw.csv")
 
     

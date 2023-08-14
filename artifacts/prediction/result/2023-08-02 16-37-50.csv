@@ -1,2 +1,0 @@
-Age,Workclass,Fnlwgt,EducationNum,MaritalStatus,Occupation,Relationship,Race,Sex,Capital_gain,Capital_loss,HoursPerWeek,NativeCountry,Income
-25.0,Private,1234.0,13,Never-married,Tech-support,Unmarried,Amer-Indian-Eskimo,1.0,0.0,0.0,60.0,India,=<50K

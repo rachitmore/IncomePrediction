@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Status{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <div class="message-content">
+        <h1>Status<br></h1>
+        <p><br>{{message}}</p>
+    </div>
+    
+{% endblock %}
+    
+

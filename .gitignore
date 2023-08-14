@@ -3,4 +3,6 @@ incomeprediction
 .vscode
 __pycache__
 documents
+documents/Deployment Screenshot
+Dockerfile
 

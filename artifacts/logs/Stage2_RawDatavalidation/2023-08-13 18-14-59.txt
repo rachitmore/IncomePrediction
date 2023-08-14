@@ -1,0 +1,54 @@
+2023-08-13/18:14:59		<bound method NDFrame.head of        age          workclass  fnlwgt      education  ...  capital-loss hours-per-week         country  income
+0       23                  ?   22966      Bachelors  ...             0             35   United-States   <=50K
+1       23                  ?   27415           11th  ...             0             40   United-States   <=50K
+2       23                  ?   32897     Assoc-acdm  ...             0             20   United-States   <=50K
+3       23                  ?   55492      Assoc-voc  ...             0             30   United-States   <=50K
+4       23                  ?   62507   Some-college  ...             0             12   United-States   <=50K
+...    ...                ...     ...            ...  ...           ...            ...             ...     ...
+32532   77   Self-emp-not-inc   71676   Some-college  ...          1944              1   United-States   <=50K
+32533   77   Self-emp-not-inc   72931        7th-8th  ...             0             20           Italy    >50K
+32534   77   Self-emp-not-inc  138714   Some-college  ...             0             40   United-States   <=50K
+32535   77   Self-emp-not-inc  145329        HS-grad  ...             0             20   United-States   <=50K
+32536   77   Self-emp-not-inc  209507   Some-college  ...             0             40   United-States   <=50K
+
+[32537 rows x 15 columns]>
+2023-08-13/18:14:59		Index(['age', 'workclass', 'fnlwgt', 'education', 'education-num',
+       'marital-status', 'occupation', 'relationship', 'race', 'sex',
+       'capital-gain', 'capital-loss', 'hours-per-week', 'country', 'income'],
+      dtype='object')
+2023-08-13/18:14:59		There is no missing values in dataset
+2023-08-13/18:14:59		There is no missing feature or extra feature in dataset
+2023-08-13/18:14:59		There are some special character in dataset
+2023-08-13/18:14:59		There is duplicate values in dataset 0        False
+1        False
+2        False
+3        False
+4        False
+         ...  
+32532    False
+32533    False
+32534    False
+32535    False
+32536    False
+Length: 32537, dtype: bool
+2023-08-13/18:14:59		All feature in Dataset don't have numeric dtype age                int64
+workclass         object
+fnlwgt             int64
+education         object
+education-num      int64
+marital-status    object
+occupation        object
+relationship      object
+race              object
+sex               object
+capital-gain       int64
+capital-loss       int64
+hours-per-week     int64
+country           object
+income            object
+dtype: object.
+2023-08-13/18:14:59		Dataset doesn't have valid column names Index(['age', 'workclass', 'fnlwgt', 'education', 'education-num',
+       'marital-status', 'occupation', 'relationship', 'race', 'sex',
+       'capital-gain', 'capital-loss', 'hours-per-week', 'country', 'income'],
+      dtype='object')..
+2023-08-13/18:14:59		Data validation has been failed, and the data preprocessing is required.

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<section class="about-me">
+    <div class="profile-image">
+        <img src="static/image/profilepic.png" alt="Rachit More">
+    </div>
+    <div class="about-content">
+        <h2>Rachit More</h2>
+
+        <p>
+            I am Rachit More, an enthusiastic data science, committed to navigating the expansive realm of data in search of invaluable insights. With a strong foundation in mathematics, statistics, and programming, I take pleasure in the intricate art of transforming raw data into actionable intelligence.
+        </p>
+        
+        <p>
+            My proficiency in data analysis, machine learning, and data visualization empowers me to tackle intricate challenges and make well-informed decisions. Whether delving into extensive datasets, constructing predictive models, or creating engaging visual representations, my passion for data science drives my unending desire for ongoing learning and adaptability in the ever-evolving landscape of technology and knowledge.
+        </p>
+
+        <p>
+            "I am currently enhancing my skillset through an exploration of Deep Learning, alongside developing familiarity with web development using Python, Python automation, and database management."
+        </p>
+        
+    </div>
+</section>
+
+{% endblock %}

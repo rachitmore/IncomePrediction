@@ -22,20 +22,29 @@ warnings.filterwarnings("ignore" )
 def train_model(DataSource):
     try:
         if DataSource == "Local":
-            print("Code flow start")
-            Data_Getter().ingest_from_csv()
-            RawDataValidation()
-            DataPreprocessing()
-            PrePreocessedDataValidation()
-            ModelTraining()
-            ModelEvaluation()
+            try:
+                print("Code flow start")
+                Data_Getter().ingest_from_csv()
+                RawDataValidation()
+                DataPreprocessing()
+                PrePreocessedDataValidation()
+                ModelTraining()
+                ModelEvaluation()
+                return "Model has been trained on local dataset \n Let's predict"
+            except:
+                return "Model has been failed to train on local dataset \n Try to click cloud option"
+
         else:
-            Data_Getter().ingest_from_database()
-            RawDataValidation()
-            DataPreprocessing()
-            PrePreocessedDataValidation()
-            ModelTraining()
-            ModelEvaluation()   
+            try:
+                Data_Getter().ingest_from_database()
+                RawDataValidation()
+                DataPreprocessing()
+                PrePreocessedDataValidation()
+                ModelTraining()
+                ModelEvaluation()
+                return "Model has been trained on cassandra database table \n Let's predict"
+            except Exception as e:
+                return "Model has been failed to train on cloud database \n Try to click local option"  
         
     except Exception as e:
         raise AppException(e,sys) from e

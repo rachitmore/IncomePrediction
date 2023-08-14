@@ -1,81 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Income Prediction</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-        }
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
-        nav {
-            background-color: #444;
-            padding: 0.5rem;
-            text-align: center;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-
-        nav a:hover {
-            color: #ff6600;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        p {
-            color: #666;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Income Prediction</h1>
-    </header>
-    <main>
+    <h1>Welcome to My Machine Learning Project</h1>
+    <section class="project">
         <h2>Adult Census Income Prediction</h2>
-        <p></p>
-        <p>Feel free to explore the links below!</p>
-    </main>
-    <nav>
-        <p><a href="{{ url_for('test') }}">Prediction</a></p>
-        <p><a href="{{ url_for('option') }}">Train Model</a></p>
-        <p><a href="{{ url_for('contact') }}">Contact</a></p>
-    </nav>
+        <p>
+            The significant disparity in wealth and income, particularly in the United States, is a major concern. Reducing global economic inequality can contribute to reducing poverty. Ensuring universal moral equality promotes sustainable development and enhances a nation's economic stability. Governments worldwide are striving to address this issue and find effective solutions.
+        </p>
 
-    <footer>
-        &copy; 2023. All rights reserved.
-    </footer>
-</body>
-</html>
+        <p>
+            This project employs exploratory data analysis and machine learning algorithms to tackle income inequality, specifically using the kaggel Adult Dataset. The goal is to predict whether an individual's annual income in the US falls into the category of over 50K dollars or equal to or less than 50K dollars, based on specific attributes. The employed Gradient Boosting Classifier Model achieved an accuracy of around 87%. 
+        </p>
+    </section>
+
+{% endblock %}
+ 
 

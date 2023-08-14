@@ -85,11 +85,11 @@ class Prediction:
             if self.result==0:
                 self.df["Income"] = ["=<50K"]
                 self.fileOperation.save_data_to_csv(self.df,f"artifacts/prediction/result/{self.current_time}.csv")
-                return "Adult Census Income Estimate Approximately less than or equal to 50K"
+                return "Adult Census Income Estimate Approximately less than or equal to 50K Dollars"
             else:
                 self.df["Income"] = [">50K"]
                 self.fileOperation.save_data_to_csv(self.df,f"artifacts/prediction/result/{self.current_time}.csv")
-                return "Adult Census Income Estimate Approximately more than  50K"
+                return "Adult Census Income Estimate Approximately more than  50K Dollars"
         except Exception as e:
             self.logging.log(str(e))
             raise AppException(e,sys) from e
