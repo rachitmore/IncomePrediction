@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Training{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <div class="form-container">
+        <form action="/train" method="post">
+            <legend>Adult Census Income Prediction</legend>
+
+            <label class="form-label">Options</label>
+            <div>
+                <input type="radio" id="Local" name="Local" value="Local">
+                <label for="Local">Local</label>
+
+                <input type="radio" id="Cloud" name="Cloud" value="Cloud">
+                <label for="Cloud">Cloud</label>
+            </div>
+
+            <div>
+                <input type="submit" value="Train Model">
+            </div>
+        </form>
+    </div>
+    
+
+{% endblock %}
+    

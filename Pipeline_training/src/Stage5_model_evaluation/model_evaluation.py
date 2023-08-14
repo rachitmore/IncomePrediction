@@ -49,17 +49,17 @@ class ModelEvaluation:
                         self.logging.log("X_test has been predicted and saved to  successfully")
 
                         self.logging.log("creating classification report..")
-                        cr = classification_report(self.y_test, self.y_pred,target_names = self.targets)    
-                        self.logging.log(f"Classification Report -\n{cr}")
+                        self.cr = classification_report(self.y_test, self.y_pred,target_names = self.targets)    
+                        self.logging.log(f"Classification Report -\n{self.cr}")
 
                         self.logging.log("creating confusion_matrix..")
-                        cm = confusion_matrix(self.y_test, self.y_pred)
-                        self.logging.log(f"Confusion matirx -\n{cm}")
+                        self.cm = confusion_matrix(self.y_test, self.y_pred)
+                        self.logging.log(f"Confusion matirx -\n{self.cm}")
                         
                         self.logging.log("Calculating Auc and Roc score")
                         y_pred_probs = self.model.predict_proba(self.X_test)
-                        auc_roc = roc_auc_score(self.y_test,y_pred_probs[:, 1])
-                        self.logging.log(f"AUC-ROC Score - {auc_roc}")
+                        self.auc_roc = roc_auc_score(self.y_test,y_pred_probs[:, 1])
+                        self.logging.log(f"AUC-ROC Score - {self.auc_roc}")
                         self.logging.log("Model Evaluation has been done successfully")
                 except Exception as e:
                         self.logging.log(str(e))

@@ -12,42 +12,45 @@ app = application
 CORS(app)
 
 
-
 @app.route("/", methods=['POST','GET'])
 @cross_origin()
 def home():
     return render_template('index.html')
 
-@app.route("/option", methods=['POST','GET'])
+@app.route("/about", methods=['POST','GET'])
 @cross_origin()
-def option():
-    return render_template('option.html')
+def about():
+    return render_template('index1.html')
 
-@app.route('/train', methods=['POST','GET'])
+@app.route("/trains", methods=['POST','GET'])
+@cross_origin()
+def trains():
+    return render_template('index3.html')
+
+@app.route("/train", methods=['POST','GET'])
 @cross_origin()
 def train():
     if request.method == 'POST':
         source = request.form.get('Local') or request.form.get('Cloud')
         if source:
             try:
-                train_model(source)
-                message = "Model Trained Successfully"
-                return render_template("train.html", message=message)      
-            except Exception as e:
-                message = "Oops! Something Went Wrong \n"
-                return render_template("train.html", message=message)
+                message = train_model(source)
+                return render_template('index4.html', message=message)      
+            except:
+                message = "Oops! Something Went Wrong.. \n Contact me"
+                return render_template('index4.html', message=message)
         else: 
             raise Exception("Option not selected")
     else:          
         message = "Train Page didn't get 'POST' request"
-        return render_template("train.html", message=message)
+        return render_template('index4.html', message=message)
 
-@app.route("/test", methods=['POST','GET'])
+@app.route("/predicts", methods=['POST','GET'])
 @cross_origin()
-def test():
-    return render_template("test.html")
+def predicts():
+    return render_template('index2.html')
 
-@app.route('/predict', methods=['GET', 'POST'])
+@app.route("/predict", methods=['GET', 'POST'])
 @cross_origin()
 def predict():
     if request.method == 'POST':
@@ -72,18 +75,13 @@ def predict():
 
             predict_object = Prediction(data=data)
             result = predict_object.prediction()
-            return render_template('result.html', result=result)
+            return render_template("index5.html", result=result)
         except Exception as e:
-            return render_template('result.html', result="Oops! Something Went Wrong")
+            return render_template("index5.html", result="Oops! Something Went Wrong.. \n Contact me")
             raise AppException(e,sys) from e
     else:  
-        return render_template('result.html', result="Predict Page didn't get 'POST' request")
+        return render_template("index5.html", result="Predict Page didn't get 'POST' request")
     
-
-@app.route("/contact", methods=['POST','GET'])
-@cross_origin()
-def contact():
-    return render_template("contact.html")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0",port=5000)
