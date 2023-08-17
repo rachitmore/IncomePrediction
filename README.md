@@ -1,13 +1,10 @@
 # Adult Census Income Prediction Project
 
 ## Overview
-
 This project focuses on predicting an individual's income based on various demographic and socioeconomic features from the U.S. Census Bureau's dataset. The dataset contains information such as age, education, occupation, marital status, and more, and we aim to build a machine learning model that can accurately predict whether a person's income exceeds $50,000 per year.
 
 ## Dataset
-
 The dataset used in this project is the "Adult Census Income" dataset. It contains the following features:
-
 1. **Age**: The age of the individual. <br>
 2. **Workclass**: The type of employment, such as private, self-employed, government, etc. <br>
 3. **FNLWGT**: The weights on the Current Population Survey (CPS) files are controlled to independent estimates of the civilian noninstitutional population of the US. <br>
@@ -25,7 +22,6 @@ The dataset used in this project is the "Adult Census Income" dataset. It contai
 14. **Income**: The target variable, indicating whether the individual's income exceeds $50,000 (1) or not (0). <br>
 
 ## Project Structure
-
 The project is organized into the following directories:
 1. **app_tracking**: Contains logging scripts and exception handling scripts. <br>
 1. **artifacts**: Contains the all data files, models and logs file. <br>
@@ -40,7 +36,6 @@ The project is organized into the following directories:
 10. **test.py**: A file used for test the train and predict pipeline <br>
 
 ### Classification Models Used:
-
  **GradientBoostingClassifier** <br>
  **HistGradientBoostingClassifier** <br>
 
@@ -74,7 +69,6 @@ Domain link - ***incomeprediction.ap-south-1.elasticbeanstalk.com***
 
 
 ## Installation
-
 To run this project locally, you need create Python 3.9 Install the required packages by running the following command:
 
 ```bash
@@ -94,7 +88,6 @@ To run this project locally, you need create Python 3.9 Install the required pac
 ```
 
 ## How to Use
-
 1. Clone this repository to your local machine.
 
 2. Navigate to the project directory:
@@ -108,7 +101,6 @@ To run this project locally, you need create Python 3.9 Install the required pac
 5. The trained model will be saved in the "artifacts/models" directory.
 
 ## Conclusion
-
 This project demonstrates the application of machine learning techniques to predict income levels based on demographic and socioeconomic features. The model can be further improved with hyperparameter tuning and more advanced algorithms. Feel free to explore, contribute, and extend this project to enhance its performance and usability.
 
 ## Credits
