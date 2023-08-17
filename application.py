@@ -42,7 +42,7 @@ def train():
         else: 
             raise Exception("Option not selected")
     else:          
-        message = "Train Page didn't get 'POST' request"
+        message = "Something went wrong contact us  .."
         return render_template('index4.html', message=message)
 
 @app.route("/predicts", methods=['POST','GET'])
@@ -77,10 +77,10 @@ def predict():
             result = predict_object.prediction()
             return render_template("index5.html", result=result)
         except Exception as e:
-            return render_template("index5.html", result="Oops! Something Went Wrong.. \n Contact me")
+            return render_template("index5.html", result="Oops! Something Went Wrong.. Please train the model first else \n Contact me")
             raise AppException(e,sys) from e
     else:  
-        return render_template("index5.html", result="Predict Page didn't get 'POST' request")
+        return render_template("index5.html", result="Something went wrong contact us  ..")
     
 
 if __name__ == "__main__":

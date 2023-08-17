@@ -1,0 +1,3 @@
+2023-08-15/14:50:43		Data ingestion started
+2023-08-15/14:50:43		Connecting to the database server
+2023-08-15/14:50:43		Unable to connect to the metadata service at https://1dbf24ea-73fa-4e0e-82e4-eb3537dd9704-us-east1.db.astra.datastax.com:29080/metadata. Check the cluster status in the cloud console. 

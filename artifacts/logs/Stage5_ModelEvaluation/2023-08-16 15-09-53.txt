@@ -1,0 +1,29 @@
+2023-08-16/15:09:53		Model Name -
+GradientBoostingClassifier
+2023-08-16/15:09:53		Model Evaluation started
+2023-08-16/15:09:53		Calculating training accuracy
+2023-08-16/15:09:53		Training accuracy has been calculated 0.8880223863479976
+2023-08-16/15:09:54		Predicting X_test..
+2023-08-16/15:09:54		X_test has been predicted and saved to  successfully
+2023-08-16/15:09:54		creating classification report..
+2023-08-16/15:09:54		Classification Report -
+              precision    recall  f1-score   support
+
+           0       0.89      0.94      0.91      8177
+           1       0.75      0.62      0.68      2561
+
+    accuracy                           0.86     10738
+   macro avg       0.82      0.78      0.80     10738
+weighted avg       0.86      0.86      0.86     10738
+
+2023-08-16/15:09:54		creating confusion_matrix..
+2023-08-16/15:09:54		Confusion matirx -
+[[7653  524]
+ [ 972 1589]]
+2023-08-16/15:09:54		Calculating Auc and Roc score
+2023-08-16/15:09:54		AUC-ROC Score - 0.9141055351060633
+2023-08-16/15:09:54		Model Evaluation has been done successfully
+2023-08-16/15:09:54		Creating RocCurveDisplay
+2023-08-16/15:09:54		Creating PrecisionRecallDisplay
+2023-08-16/15:09:56		Combining the display objects into a single plot
+2023-08-16/15:09:56		Plot has been saved to artifacts/plots/GradientBoostingClassifier_roc_and_pr.png successfully

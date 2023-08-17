@@ -1,0 +1,6 @@
+2023-08-16/15:07:48		Data ingestion started
+2023-08-16/15:07:48		Connecting to the database server
+2023-08-16/15:08:02		Database server has been connected
+2023-08-16/15:08:02		Executing the query
+2023-08-16/15:08:05		Writing the results to the CSV file
+2023-08-16/15:08:28		CSV file has been written. and data saved to the artifacts/data/raw.csv
