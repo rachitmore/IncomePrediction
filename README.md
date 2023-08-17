@@ -112,11 +112,7 @@ To run this project locally, you need create Python 3.9 Install the required pac
 This project demonstrates the application of machine learning techniques to predict income levels based on demographic and socioeconomic features. The model can be further improved with hyperparameter tuning and more advanced algorithms. Feel free to explore, contribute, and extend this project to enhance its performance and usability.
 
 ## Credits
-
 Dataset Source: UCI Machine Learning Repository - Adult Data Set - https://archive.ics.uci.edu/dataset/2/adult
 
 ## License
-
 This project is licensed under the [MIT License](LICENSE).
-# neww
-# IncomePrediction
