@@ -1,0 +1,11 @@
+2023-08-14/22:52:56		Data loaded from CSV file: artifacts/data/y_train.csv
+2023-08-14/22:52:56		Data loaded from CSV file: artifacts/data/y_test.csv
+2023-08-14/22:52:56		Data loaded from CSV file: artifacts/data/FinalTargetData.csv
+2023-08-14/22:53:18		Get a list of all files in the directory
+2023-08-14/22:53:18		Iterate over each file and delete it
+2023-08-14/22:53:18		Deleted artifacts/models/TrainAndTest\BestModel.pkl
+2023-08-14/22:53:18		Model saved to file: artifacts/models/TrainAndTest/BestModel.pkl
+2023-08-14/22:53:49		Get a list of all files in the directory
+2023-08-14/22:53:49		Iterate over each file and delete it
+2023-08-14/22:53:49		Deleted artifacts/models/TrainAndDeploy\BestModel.pkl
+2023-08-14/22:53:49		Model saved to file: artifacts/models/TrainAndDeploy/BestModel.pkl

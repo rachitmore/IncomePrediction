@@ -1,0 +1,2 @@
+2023-08-15/14:54:50		Model loaded from file: artifacts/models/TrainAndTest/BestModel.pkl
+2023-08-15/14:54:51		Data saved to CSV file: artifacts/data/y_pred.csv

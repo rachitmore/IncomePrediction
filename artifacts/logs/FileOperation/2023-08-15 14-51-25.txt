@@ -1,0 +1,4 @@
+2023-08-15/14:51:25		Get a list of all files in the directory
+2023-08-15/14:51:25		Iterate over each file and delete it
+2023-08-15/14:51:25		Skipping artifacts/data\raw as it is not a file.
+2023-08-15/14:51:26		Data saved to CSV file: artifacts/data/raw.csv

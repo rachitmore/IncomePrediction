@@ -1,0 +1,2 @@
+2023-08-16/15:34:48		Data loaded from CSV file: artifacts/data/raw.csv
+2023-08-16/15:34:49		Data saved to CSV file: artifacts/data/BadData.csv

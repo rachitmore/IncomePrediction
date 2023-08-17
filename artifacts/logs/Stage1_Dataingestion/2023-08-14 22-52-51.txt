@@ -1,0 +1,2 @@
+2023-08-14/22:52:51		Data ingestion started from specific path in csv
+2023-08-14/22:52:52		Data ingested successfully from specific path in csv
