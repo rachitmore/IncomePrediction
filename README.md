@@ -79,8 +79,23 @@ The project is organized into the following directories:
 
 To run this project locally, you need to create a Python 3.9 virtual environment and install the required packages by running the following commands:
 
-```bash
+'''bash
 conda create -p venv python=3.9 -y
 source activate ./venv
 pip install -r requirements.txt
 python application.py
+
+## Contributing
+Contributions are welcome! Follow these steps:
+1. Fork the project.
+2. Create a new branch: `git checkout -b feature-branch`
+3. Make your changes and commit them: `git commit -m 'Add new feature'`
+4. Push to the branch: `git push origin feature-branch`
+5. Open a pull request.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+For any questions or concerns, please contact [Rachit More](mailto:rachitmore3@gmail.com).
+
