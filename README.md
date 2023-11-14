@@ -79,11 +79,11 @@ The project is organized into the following directories:
 
 To run this project locally, you need to create a Python 3.9 virtual environment and install the required packages by running the following commands:
 
-'''bash
+''' bash
 conda create -p venv python=3.9 -y
 source activate ./venv
 pip install -r requirements.txt
-python application.py
+python application.py ```
 
 ## Contributing
 Contributions are welcome! Follow these steps:
